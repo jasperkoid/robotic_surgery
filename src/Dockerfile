@@ -35,6 +35,7 @@ RUN apt-get -y install gtk2-engines gtk2-engines-pixbuf
 RUN apt-get -y install x11vnc
 RUN apt-get -y install xserver-xorg-video-dummy xserver-xorg-input-void
 RUN apt-get -y install xvfb
+RUN apt-get -y install evince
 
 # Comment out annoying line which stops .bashrc from sourcing for
 # non-interactive shells.
