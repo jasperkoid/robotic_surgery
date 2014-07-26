@@ -1,0 +1,12 @@
+<package>
+  <name>learningtf</name>
+  <version>0.1.0</version>
+  <description>
+    source for the earning tf tutorial
+  </description>
+  <author>Rich Wareham</author>
+  <maintainer email="rjw57@cam.ac.uk">Rich Wareham</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
