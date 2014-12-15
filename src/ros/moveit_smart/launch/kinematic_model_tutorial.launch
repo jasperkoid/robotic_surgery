@@ -1,0 +1,13 @@
+<launch>
+  <include file="$(find moveit_smart)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+  <node name="kinematic_model_tutorial"
+        pkg="moveit_smart"
+        type="kinematic_model_tutorial"
+        respawn="false" output="screen">
+    <rosparam command="load"
+              file="$(find moveit_smart)/config/kinematics.yaml"/>
+  </node>
+</launch>
