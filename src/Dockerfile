@@ -48,6 +48,9 @@ RUN apt-get -y install libopencv-dev python-opencv
 # JsonCPP library for k2_client
 RUN apt-get -y install libjsoncpp-dev
 
+# Add package for kinematics which is not installed as a dependency
+RUN apt-get -y install ros-hydro-orocos-kdl
+
 # Comment out annoying line which stops .bashrc from sourcing for
 # non-interactive shells.
 RUN sed -i 's/\[ -z "$PS1" \] && return/# &/' /home/ros/.bashrc 
